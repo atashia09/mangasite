@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Manga Store</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="site-nav">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="logohehe.png" alt="TomoShelf Logo" />
+        </a>
+  
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Our Blogs</a>
+          <a href="#" class="nav-link">Contacts</a>
+          <a href="#" class="nav-link">Best Seller</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-btn nav-link"
+              >Categories <i class="fas fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">Anime</a>
+              <a href="#" class="dropdown-item">Manga</a>
+              <a href="#" class="dropdown-item">Manhua</a>
+              <a href="#" class="dropdown-item">Manhwa</a>
+              <a href="#" class="dropdown-item">LightNovel</a>
+              <a href="#" class="dropdown-item">Slice of Life</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="user-actions">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search manga..." />
+          </div>
+  
+          <!-- Login Button -->
+          <a href="#" class="login">Login</a>
+  
+          <!-- Cart -->
+          <div class="cart">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="section-title__heading">Contact Us</h2>
+                <p class="section-title__description">Get in touch with us for any inquiries or support</p>
+            </div>
+            
+            <div class="contact__wrapper">
+                <div class="contact__form">
+                    <form id="contactForm" class="contact__form-inner">
+                        <div class="contact__form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <div class="contact__form-checkbox">
+                                <input type="checkbox" id="subscribe" name="subscribe">
+                                <label for="subscribe">Subscribe to our newsletter</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="site-btn contact__submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Our Location</h4>
+                        <p>123 Manga Street, Tokyo, Japan</p>
+                    </div>
+                    
+                    <div class="contact__info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>info@mangastore.com</p>
+                        <p>support@mangastore.com</p>
+                    </div>
+                    
+                    <div class="contact__info-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>+81 123 456 7890</p>
+                        <p>+81 123 456 7891</p>
+                    </div>
+                    
+                    <div class="contact__info-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Working Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-container">
+                            <img src="img/logo.png" alt="Tomotrove Logo">
+                        </div>
+                    </a>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer__categories">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="best-sellers.html">Manga</a></li>
+                        <li><a href="#">Manhua</a></li>
+                        <li><a href="#">Manhwa</a></li>
+                        <li><a href="#">Light Novels</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer__social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Tomotrove. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

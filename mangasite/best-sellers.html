@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Sellers - Manga Store</title>
+    <link rel="stylesheet" href="best-sellers.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="logohehe.png" alt="TomoShelf Logo" />
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Our Blogs</a>
+        <a href="#" class="nav-link">Contacts</a>
+        <a href="#" class="nav-link">Best Seller</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn nav-link"
+            >Categories <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">Anime</a>
+            <a href="#" class="dropdown-item">Manga</a>
+            <a href="#" class="dropdown-item">Manhua</a>
+            <a href="#" class="dropdown-item">Manhwa</a>
+            <a href="#" class="dropdown-item">LightNovel</a>
+            <a href="#" class="dropdown-item">Slice of Life</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-actions">
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search manga..." />
+        </div>
+
+        <!-- Login Button -->
+        <a href="#" class="login">Login</a>
+
+        <!-- Cart -->
+        <div class="cart">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="best-sellers-details spad">
+      <div class="container">
+        <div class="section-title">
+          <h2>Best Sellers</h2>
+          <p>Discover our most popular manga series</p>
+        </div>
+
+        <div class="best-sellers__grid">
+          <!-- Best Seller Item 1 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/one-piece.jpg" alt="One Piece" />
+              <div class="best-sellers__item__hover">
+                <h5>One Piece</h5>
+                <span>9.8</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>One Piece</h5>
+              <span>Eiichiro Oda</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$19.99</span>
+                <span class="rating">9.8</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><?= $cart_count ?><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 2 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/naruto.jpg" alt="Naruto" />
+              <div class="best-sellers__item__hover">
+                <h5>Naruto</h5>
+                <span>9.5</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Naruto</h5>
+              <span>Masashi Kishimoto</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$18.99</span>
+                <span class="rating">9.5</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 3 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/demon-slayer.jpg" alt="Demon Slayer" />
+              <div class="best-sellers__item__hover">
+                <h5>Demon Slayer</h5>
+                <span>9.7</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Demon Slayer</h5>
+              <span>Koyoharu Gotouge</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$21.99</span>
+                <span class="rating">9.7</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 4 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/my-hero.jpg" alt="My Hero Academia" />
+              <div class="best-sellers__item__hover">
+                <h5>My Hero Academia</h5>
+                <span>9.4</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>My Hero Academia</h5>
+              <span>Kohei Horikoshi</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$20.99</span>
+                <span class="rating">9.4</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 5 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/jujutsu.jpg" alt="Jujutsu Kaisen" />
+              <div class="best-sellers__item__hover">
+                <h5>Jujutsu Kaisen</h5>
+                <span>9.6</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Jujutsu Kaisen</h5>
+              <span>Gege Akutami</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$22.99</span>
+                <span class="rating">9.6</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 6 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img
+                src="img/best-sellers/attack-titan.jpg"
+                alt="Attack on Titan"
+              />
+              <div class="best-sellers__item__hover">
+                <h5>Attack on Titan</h5>
+                <span>9.3</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Attack on Titan</h5>
+              <span>Hajime Isayama</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$19.99</span>
+                <span class="rating">9.3</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 7 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/death-note.jpg" alt="Death Note" />
+              <div class="best-sellers__item__hover">
+                <h5>Death Note</h5>
+                <span>9.2</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Death Note</h5>
+              <span>Tsugumi Ohba</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$17.99</span>
+                <span class="rating">9.2</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 8 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/dragon-ball.jpg" alt="Dragon Ball" />
+              <div class="best-sellers__item__hover">
+                <h5>Dragon Ball</h5>
+                <span>9.1</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Dragon Ball</h5>
+              <span>Akira Toriyama</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$23.99</span>
+                <span class="rating">9.1</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 9 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/bleach.jpg" alt="Bleach" />
+              <div class="best-sellers__item__hover">
+                <h5>Bleach</h5>
+                <span>9.0</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Bleach</h5>
+              <span>Tite Kubo</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$18.99</span>
+                <span class="rating">9.0</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 10 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/one-punch.jpg" alt="One Punch Man" />
+              <div class="best-sellers__item__hover">
+                <h5>One Punch Man</h5>
+                <span>8.9</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>One Punch Man</h5>
+              <span>ONE, Yusuke Murata</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$16.99</span>
+                <span class="rating">8.9</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 11 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/black-clover.jpg" alt="Black Clover" />
+              <div class="best-sellers__item__hover">
+                <h5>Black Clover</h5>
+                <span>8.8</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Black Clover</h5>
+              <span>Yūki Tabata</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$19.99</span>
+                <span class="rating">8.8</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 12 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/tokyo-ghoul.jpg" alt="Tokyo Ghoul" />
+              <div class="best-sellers__item__hover">
+                <h5>Tokyo Ghoul</h5>
+                <span>8.7</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Tokyo Ghoul</h5>
+              <span>Sui Ishida</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$20.99</span>
+                <span class="rating">8.7</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 13 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/berserk.jpg" alt="Berserk" />
+              <div class="best-sellers__item__hover">
+                <h5>Berserk</h5>
+                <span>8.6</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Berserk</h5>
+              <span>Kentaro Miura</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$22.99</span>
+                <span class="rating">8.6</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 14 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img
+                src="img/best-sellers/fullmetal.jpg"
+                alt="Fullmetal Alchemist"
+              />
+              <div class="best-sellers__item__hover">
+                <h5>Fullmetal Alchemist</h5>
+                <span>8.5</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Fullmetal Alchemist</h5>
+              <span>Hiromu Arakawa</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$19.99</span>
+                <span class="rating">8.5</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 15 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img
+                src="img/best-sellers/hunter-x-hunter.jpg"
+                alt="Hunter x Hunter"
+              />
+              <div class="best-sellers__item__hover">
+                <h5>Hunter x Hunter</h5>
+                <span>8.4</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Hunter x Hunter</h5>
+              <span>Yoshihiro Togashi</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$21.99</span>
+                <span class="rating">8.4</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 16 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/soul-eater.jpg" alt="Soul Eater" />
+              <div class="best-sellers__item__hover">
+                <h5>Soul Eater</h5>
+                <span>8.3</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Soul Eater</h5>
+              <span>Atsushi Ōkubo</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$18.99</span>
+                <span class="rating">8.3</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 17 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/steins-gate.jpg" alt="Steins;Gate" />
+              <div class="best-sellers__item__hover">
+                <h5>Steins;Gate</h5>
+                <span>8.2</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Steins;Gate</h5>
+              <span>Hiro Kaku</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$20.99</span>
+                <span class="rating">8.2</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 18 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img
+                src="img/best-sellers/akame-ga-kill.jpg"
+                alt="Akame ga Kill!"
+              />
+              <div class="best-sellers__item__hover">
+                <h5>Akame ga Kill!</h5>
+                <span>8.1</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Akame ga Kill!</h5>
+              <span>Takahiro, Tetsuya Tashiro</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$19.99</span>
+                <span class="rating">8.1</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 19 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/one-piece.jpg" alt="One Piece" />
+              <div class="best-sellers__item__hover">
+                <h5>One Piece</h5>
+                <span>9.8</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>One Piece</h5>
+              <span>Eiichiro Oda</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$19.99</span>
+                <span class="rating">9.8</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Best Seller Item 20 -->
+          <div class="best-sellers__item">
+            <div class="best-sellers__item__pic">
+              <img src="img/best-sellers/naruto.jpg" alt="Naruto" />
+              <div class="best-sellers__item__hover">
+                <h5>Naruto</h5>
+                <span>9.5</span>
+              </div>
+            </div>
+            <div class="best-sellers__item__text">
+              <h5>Naruto</h5>
+              <span>Masashi Kishimoto</span>
+              <div class="best-sellers__item__price">
+                <span class="price">$18.99</span>
+                <span class="rating">9.5</span>
+              </div>
+              <div class="best-sellers__item__buttons">
+                <a href="#" class="primary-btn"
+                  ><i class="fas fa-book-reader"></i> Read Now</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-heart"></i> Add to Wishlist</a
+                >
+                <a href="#" class="secondary-btn"
+                  ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more items as needed -->
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+          <div class="footer__content">
+              <div class="footer__logo">
+                  <a href="index.html" class="logo-link">
+                      <div class="logo-container">
+                          <img src="img/logo.png" alt="Tomotrove Logo">
+                      </div>
+                  </a>
+              </div>
+              <div class="footer__links">
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                  </ul>
+              </div>
+              <div class="footer__categories">
+                  <h4>Categories</h4>
+                  <ul>
+                      <li><a href="#">Manga</a></li>
+                      <li><a href="#">Manhua</a></li>
+                      <li><a href="#">Manhwa</a></li>
+                      <li><a href="#">Light Novels</a></li>
+                  </ul>
+              </div>
+              <div class="footer__newsletter">
+                  <h4>Newsletter</h4>
+                  <p>Subscribe to our newsletter for the latest updates and promotions.</p>
+                  <form class="newsletter-form">
+                      <input type="email" placeholder="Enter your email">
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
+              <div class="footer__social">
+                  <h4>Follow Us</h4>
+                  <div class="social-links">
+                      <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                      <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-icon discord"><i class="fab fa-discord"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer__bottom">
+              <p>&copy; 2025 Tomotrove. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+   
+
+    <script>
+      function toggleDropdown() {
+        const dropdownContent = document.querySelector(".dropdown-content");
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+      }
+
+      // Close dropdown when clicking outside
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropdown-btn")) {
+          const dropdownContent = document.querySelector(".dropdown-content");
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          }
+        }
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

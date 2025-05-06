@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TomoShelf - Manga & Books</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Enhanced Navbar -->
+    <nav class="site-nav">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="logohehe.png" alt="TomoShelf Logo" />
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Our Blogs</a>
+        <a href="contact.html" class="nav-link">Contacts</a>
+        <a href="#" class="nav-link">Best Seller</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">Anime</a>
+            <a href="best-sellers.html" class="dropdown-item">Manga</a>
+            <a href="#" class="dropdown-item">Manhua</a>
+            <a href="#" class="dropdown-item">Manhwa</a>
+            <a href="#" class="dropdown-item">LightNovel</a>
+            <a href="#" class="dropdown-item">Slice of Life</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Actions -->
+      <div class="user-actions">
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search manga...">
+        </div>
+
+        <!-- Login Button -->
+        <a href="#" class="login">Login</a>
+
+        <!-- Cart -->
+        <div class="cart">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <span class="cart-count">0</span>
+        </div>
+        </a>
+
+    
+
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__slider owl-carousel">
+          <!-- Dr. Stone Slide -->
+          <div class="hero__items set-bg" data-setbg="img/hero/dr.stone.jpg">
+            <div class="hero__content">
+              <div class="hero__text">
+                <div class="label">Action/Sci-Fi</div>
+                <h2>Dr. Stone: Stone Wars</h2>
+                <p>Senku and his allies must fight to reclaim civilization from the Stone World.</p>
+                <div class="hero__buttons">
+                  <a href="#" class="primary-btn"><i class="fas fa-book-reader"></i> Read Now</a>
+                  <a href="#" class="secondary-btn"><i class="fas fa-heart"></i> Add to Wishlist</a>
+                </div>
+              </div>
+              <div class="hero__features">
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>4.9 Rating</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>1.2M Readers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-book"></i>
+                  <span>20 Volumes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Black Clover Slide -->
+          <div class="hero__items set-bg" data-setbg="img/hero/blackclover.png">
+            <div class="hero__content">
+              <div class="hero__text">
+                <div class="label">Fantasy/Action</div>
+                <h2>Black Clover: Sword of the Wizard King</h2>
+                <p>Asta and Yuno's journey continues as they face new challenges and enemies.</p>
+                <div class="hero__buttons">
+                  <a href="#" class="primary-btn"><i class="fas fa-book-reader"></i> Read Now</a>
+                  <a href="#" class="secondary-btn"><i class="fas fa-heart"></i> Add to Wishlist</a>
+                </div>
+              </div>
+              <div class="hero__features">
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>4.8 Rating</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>1.5M Readers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-book"></i>
+                  <span>25 Volumes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One Piece Slide -->
+          <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__content">
+              <div class="hero__text">
+                <div class="label">Action/Adventure</div>
+                <h2>One Piece: Wano Country</h2>
+                <p>Luffy and his crew face new challenges in the samurai-filled land of Wano.</p>
+                <div class="hero__buttons">
+                  <a href="#" class="primary-btn"><i class="fas fa-book-reader"></i> Read Now</a>
+                  <a href="#" class="secondary-btn"><i class="fas fa-heart"></i> Add to Wishlist</a>
+                </div>
+              </div>
+              <div class="hero__features">
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>5.0 Rating</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>2.5M Readers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-book"></i>
+                  <span>100+ Volumes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Black Clover Slide -->
+          <div class="hero__items set-bg" data-setbg="img/hero/blackclover.png">
+            <div class="hero__content">
+              <div class="hero__text">
+                <div class="label">Fantasy/Action</div>
+                <h2>Black Clover: Sword of the Wizard King</h2>
+                <p>Asta and Yuno's journey continues as they face new challenges and enemies.</p>
+                <div class="hero__buttons">
+                  <a href="#" class="primary-btn"><i class="fas fa-book-reader"></i> Read Now</a>
+                  <a href="#" class="secondary-btn"><i class="fas fa-heart"></i> Add to Wishlist</a>
+                </div>
+              </div>
+              <div class="hero__features">
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>4.8 Rating</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>1.5M Readers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-book"></i>
+                  <span>25 Volumes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- One Piece Slide -->
+          <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__content">
+              <div class="hero__text">
+                <div class="label">Action/Adventure</div>
+                <h2>One Piece: Wano Country</h2>
+                <p>Luffy and his crew face new challenges in the samurai-filled land of Wano.</p>
+                <div class="hero__buttons">
+                  <a href="#" class="primary-btn"><i class="fas fa-book-reader"></i> Read Now</a>
+                  <a href="#" class="secondary-btn"><i class="fas fa-heart"></i> Add to Wishlist</a>
+                </div>
+              </div>
+              <div class="hero__features">
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>5.0 Rating</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>2.5M Readers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-book"></i>
+                  <span>100+ Volumes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+
+   
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="section-title__heading">Best Sellers</h2>
+                <p class="section-title__description">Our most popular manga titles</p>
+            </div>
+            <div class="best-sellers__carousel owl-carousel">
+                <div class="best-sellers__item">
+                    <div class="best-sellers__item__pic">
+                        <img src="img/bestsellers/jujutsu.jpg" alt="Jujutsu Kaisen">
+                        <div class="best-sellers__item__actions">
+                            <button class="action-btn add-to-cart" data-id="jujutsu">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn add-to-wishlist" data-id="jujutsu">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="action-btn read-btn" data-id="jujutsu">
+                                <i class="fas fa-book-reader"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="best-sellers__item__text">
+                        <h5>Jujutsu Kaisen</h5>
+                        <p class="best-sellers__item__description">Follow the adventures of Monkey D. Luffy and his pirate crew as they search for the ultimate treasure known as One Piece.</p>
+                        <div class="best-sellers__item__price">$19.99</div>
+                        <div class="best-sellers__item__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-sellers__item">
+                    <div class="best-sellers__item__pic">
+                        <img src="img/bestsellers/demon-slayer.jpg" alt="Demon Slayer">
+                        <div class="best-sellers__item__actions">
+                            <button class="action-btn add-to-cart" data-id="demon-slayer">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn add-to-wishlist" data-id="demon-slayer">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="action-btn read-btn" data-id="demon-slayer">
+                                <i class="fas fa-book-reader"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="best-sellers__item__text">
+                        <h5>Demon Slayer</h5>
+                        <p class="best-sellers__item__description">Follow the adventures of Monkey D. Luffy and his pirate crew as they search for the ultimate treasure known as One Piece.</p>
+                        <div class="best-sellers__item__price">$17.99</div>
+                        <div class="best-sellers__item__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-sellers__item">
+                    <div class="best-sellers__item__pic">
+                        <img src="img/bestsellers/onepiece.jpg" alt="One Piece">
+                        <div class="best-sellers__item__actions">
+                            <button class="action-btn add-to-cart" data-id="onepiece">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="action-btn add-to-wishlist" data-id="onepiece">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="action-btn read-btn" data-id="onepiece">
+                                <i class="fas fa-book-reader"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="best-sellers__item__text">
+                        <h5>One Piece</h5>
+                        <p class="best-sellers__item__description">Follow the adventures of Monkey D. Luffy and his pirate crew as they search for the ultimate treasure known as One Piece.</p>
+                        <div class="best-sellers__item__price">$19.99</div>
+                        <div class="best-sellers__item__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <section class="best-sellers">
+      <div class="container">
+          <div class="section-title text-center">
+              <h2 class="section-title__heading">Hot Sales</h2>
+              <p class="section-title__description">Our most popular manga titles</p>
+          </div>
+          <div class="best-sellers__carousel owl-carousel">
+              <div class="best-sellers__item">
+                  <div class="best-sellers__item__pic">
+                      <img src="img/bestsellers/jujutsu.jpg" alt="Jujutsu Kaisen">
+                      <div class="best-sellers__item__actions">
+                          <button class="action-btn add-to-cart" data-id="jujutsu">
+                              <i class="fas fa-shopping-cart"></i>
+                          </button>
+                          <button class="action-btn add-to-wishlist" data-id="jujutsu">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <button class="action-btn read-btn" data-id="jujutsu">
+                              <i class="fas fa-book-reader"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="best-sellers__item__text">
+                      <h5>Jujutsu Kaisen</h5>
+                      <p class="best-sellers__item__description">Follow the adventures of Monkey D. Luffy and his pirate crew as they search for the ultimate treasure known as One Piece.</p>
+                      <div class="best-sellers__item__price">$19.99</div>
+                      <div class="best-sellers__item__rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <span>(4.9)</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-sellers__item">
+                  <div class="best-sellers__item__pic">
+                      <img src="img/bestsellers/demon-slayer.jpg" alt="Demon Slayer">
+                      <div class="best-sellers__item__actions">
+                          <button class="action-btn add-to-cart" data-id="demon-slayer">
+                              <i class="fas fa-shopping-cart"></i>
+                          </button>
+                          <button class="action-btn add-to-wishlist" data-id="demon-slayer">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <button class="action-btn read-btn" data-id="demon-slayer">
+                              <i class="fas fa-book-reader"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="best-sellers__item__text">
+                      <h5>Demon Slayer</h5>
+                      <p class="best-sellers__item__description">Follow the adventures of Monkey D. Luffy and his pirate crew as they search for the ultimate treasure known as One Piece.</p>
+                      <div class="best-sellers__item__price">$17.99</div>
+                      <div class="best-sellers__item__rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <span>(4.8)</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-sellers__item">
+                  <div class="best-sellers__item__pic">
+                      <img src="img/bestsellers/onepiece.jpg" alt="One Piece">
+                      <div class="best-sellers__item__actions">
+                          <button class="action-btn add-to-cart" data-id="onepiece">
+                              <i class="fas fa-shopping-cart"></i>
+                          </button>
+                          <button class="action-btn add-to-wishlist" data-id="onepiece">
+                              <i class="fas fa-heart"></i>
+                          </button>
+                          <button class="action-btn read-btn" data-id="onepiece">
+                              <i class="fas fa-book-reader"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="best-sellers__item__text">
+                      <h5>One Piece</h5>
+                      <p class="best-sellers__item__description">Follow the adventures of Monkey D. Luffy and his pirate crew as they search for the ultimate treasure known as One Piece.</p>
+                      <div class="best-sellers__item__price">$19.99</div>
+                      <div class="best-sellers__item__rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <span>(5.0)</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+  </section>
+    <footer class="footer">
+      <div class="container">
+          <div class="footer__content">
+              <div class="footer__logo">
+                  <a href="index.html" class="logo-link">
+                      <div class="logo-container">
+                          <img src="img/logo.png" alt="Tomotrove Logo">
+                      </div>
+                  </a>
+              </div>
+              <div class="footer__links">
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                  </ul>
+              </div>
+              <div class="footer__categories">
+                  <h4>Categories</h4>
+                  <ul>
+                      <li><a href="best-sellers.html">Manga</a></li>
+                      <li><a href="#">Manhua</a></li>
+                      <li><a href="#">Manhwa</a></li>
+                      <li><a href="#">Light Novels</a></li>
+                  </ul>
+              </div>
+              <div class="footer__newsletter">
+                  <h4>Newsletter</h4>
+                  <p>Subscribe to our newsletter for the latest updates and promotions.</p>
+                  <form class="newsletter-form">
+                      <input type="email" placeholder="Enter your email">
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
+              <div class="footer__social">
+                  <h4>Follow Us</h4>
+                  <div class="social-links">
+                      <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                      <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-icon discord"><i class="fab fa-discord"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer__bottom">
+              <p>&copy; 2025 Tomotrove. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+     
